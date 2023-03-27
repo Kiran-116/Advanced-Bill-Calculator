@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Advanced Tip Calculator </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet"></head>
+<body>
+    <div class="calc-body">
+        <h1> Advanced Bill Calculator </h1>
+        <div class="d1">
+            <div class="title"> Bill Total </div>
+            <div class="input1">
+                <span> $ </span>
+                <input 
+                    type="text" 
+                    placeholder="0.00"
+                    onkeyup="calculateBill()"
+                    id="billTotalInput"
+                >
+            </div>
+        </div>
+        <div class="d1">
+            <div class="title"> Tip </div>
+            <div class="input1">
+                <span> % </span>
+                <input 
+                    type="text" 
+                    placeholder="10" 
+                    onkeyup="calculateBill()"
+                    id="tipInput" 
+                >
+            </div>
+        </div>
+        <div class="bottom d1">
+            <div class="b1">
+                <div> People </div>
+                <div class="b2"> 
+                    <div class="buttonContainer">
+                        <button class="splitButton" onclick="increasePeople()">
+                            <span class="buttonText"> + </span>
+                        </button> 
+                    </div>
+                    <div class="splitAmount" id="numberOfPeople"> 1 </div> 
+                    <div class="buttonContainer">
+                        <button class="splitButton" onclick="decreasePeople()">
+                            <span class="buttonText"> - </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="b3">
+                <div> Total per Person </div>
+                <div id="perPersonTotal"> $0.00 </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">  </script>
+</body>
+</html>

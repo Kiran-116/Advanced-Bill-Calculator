@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(133, 161, 255);
+}
+
+h1 {
+    font-family: Marck Script;
+    font-weight: 10%;
+    text-align: center;
+}
+
+.calc-body {
+    background-color: rgb(29, 39, 43);
+    color: white;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    height: 500px;
+    margin-top: 30px;
+}
+
+.bottom {
+    display: flex;
+}
+
+.b1 {
+    margin-left: 0;
+    margin-right: auto;
+}
+.b2 {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.d1 {
+    margin: 20px;
+}
+
+.b2 {
+    display: flex;
+}
+
+#numberOfPeople {
+    margin: 3px;
+}
+
+.input1 {
+    background-color: rgb(93, 93, 126);
+    border-radius: 30px;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* IMP */
+input {
+    background-color: transparent;
+    border: none;
+    border-style: none;
+}
+
+.buttonText {
+    border-radius: 50px;
+
+}
